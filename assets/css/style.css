@@ -57,8 +57,9 @@
   }
 
   .flexbox-container  {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: yellow;
   }
 
@@ -71,16 +72,15 @@
 
   .flexbox-item-1 {
     min-height: 100px;
-    flex-shrink: 0;
+    flex-wrap: wrap;
     background-color: #003300;
     color: white;
   }
 
   .flexbox-item-2 {
-    min-width: 200px;
-    
-    flex-grow: 3;
-    flex-basis: 0;
+    min-width: 280px;
+    flex-flow: column;
+    align-content: stretch;
   }
 
   .flexbox-item-3 {
