@@ -57,7 +57,7 @@
   }
 
   .flexbox-container  {
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     background-color: yellow;
   }
@@ -67,4 +67,22 @@
     margin: 10px;
     border: 3px solid #003300;
     min-height: 200px;
+  }
+
+  .flexbox-item-1 {
+    min-height: 100px;
+    flex-shrink: 0;
+    background-color: #003300;
+    color: white;
+  }
+
+  .flexbox-item-2 {
+    min-width: 200px;
+    
+    flex-grow: 3;
+    flex-basis: 0;
+  }
+
+  .flexbox-item-3 {
+    flex-grow: 1;
   }
